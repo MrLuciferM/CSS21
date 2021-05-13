@@ -1,0 +1,57 @@
+:root {
+    --border: 3px solid red;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    background-color: #9b5de5;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    height: 80vh;
+    margin: 10vh 0;
+    /* border: var(--border); */
+    display: grid;
+    place-items: center;
+}
+
+/* .calculator {
+    border: var(--border);
+} */
+
+table {
+    padding: 4px;
+}
+
+td {
+    font-size: 1.8rem;
+    padding: 0.9em;
+    background-color: #f15bb5;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
+}
+
+td:hover {
+    opacity: 0.7;
+    box-shadow: none;
+}
+
+.display {
+    background-color: #00bbf9;
+    opacity: 0.8;
+    font-size: 2rem;
+    padding: 0.9em;
+    text-align: right;
+    box-shadow: 4px 0px 2px 1px rgba(0, 0, 255, .3);
+}
+
+/* table,tr,td,th {
+    border: var(--border);
+} */
