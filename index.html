@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS21 Practice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+    }
+
+    body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .hero {
+        width: 80%;
+        max-width: 1129px;
+        margin: 0 auto;
+        background-color: #edddd4;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    .hero h1 {
+        color: #824936;
+        font-size: 3.75em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        color: #222C2A;
+        letter-spacing: 6px;
+    }
+
+    h3 {
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #222C2A;
+        letter-spacing: 6px;
+    }
+
+    .grid {
+        margin: 50px 0;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        gap: 1em;
+    }
+
+    @media screen and (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .project {
+        text-decoration: none;
+        background-color: #d9ae94;
+        padding: 1rem;
+        border: #222C2A solid 1px;
+    }
+
+    .project:hover,
+    .project:focus {
+        background-color: #ad9585;
+    }
+
+    .project h1 {
+        font-size: 1.6em;
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <div class="hero">
+        <h1>21 Day Challenge</h1>
+        <h2>Responsive web design</h2>
+        <h3>All Projects</h3>
+        <div class="grid">
+            <a href="./challenge01/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">Challenge-01</h1>
+                </div>
+            </a>
+
+            <a href="./challenge02/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">Challenge-02</h1>
+                </div>
+            </a>
+
+            <a href="./challenge03/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">Challenge-03</h1>
+                </div>
+            </a>
+
+            <a href="./week1/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">week1</h1>
+                </div>
+            </a>
+
+            <a href="./challenge04/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">Challenge-04</h1>
+                </div>
+            </a>
+
+            <a href="./nav-challenge/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">nav-challenege</h1>
+                </div>
+            </a>
+            <a href="./flexbox-challenge-4/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">flexbox-challenge-4</h1>
+                </div>
+            </a>
+        </div>
+        <h2>Personal Projects</h2>
+        <div class="grid">
+            <a href="./calculator/" class="project">
+                <span class="material-icons">
+                    code
+                </span>
+                <div>
+                    <h1 class="project__name roboto-font">calculator</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
